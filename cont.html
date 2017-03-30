@@ -1,30 +1,31 @@
-doctype html
-html
-  head
-  body
-    figure#nespad
-      .cord
-      section.dpad-pane
-        .dpad-hole
-        #dpad
-          canvas#dpad-body width=150 height=150
-          button#up.button
-          button#right.button
-          button#down.button
-          button#left.button
-      section.menu-pane
-        .labels
-          label.select for="CAST" CAST
-          label.start for="PAUSE" PAUSE
-        .buttons
-          button#select.button.select CAST
-          button#start.button.start PAUSE
-      section.action-pane
-        .logo CC Centipede
-        .buttons
-          label.label
-            | B
-            button#b.button
-          label.label
-            | A
-            button#a.button
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <figure id="nespad">
+      <div class="cord"></div>
+      <section class="dpad-pane">
+        <div class="dpad-hole"></div>
+        <div id="dpad">
+          <canvas height="1150" id="dpad-body" width="250"></canvas><button class="button" id="up"></button><button class="button" id="right"></button><button class="button" id="down"></button><button class="button" id="left"></button>
+        </div>
+      </section>
+      <section class="menu-pane">
+        <div class="labels">
+          <label class="select" for="CAST">CAST</label><label class="start" for="PAUSE">PAUSE</label>
+        </div>
+        <div class="buttons">
+          <button class="button select" id="select">CAST</button><button class="button start" id="start">PAUSE</button>
+        </div>
+      </section>
+      <section class="action-pane">
+        <div class="logo">
+          CC Centipede
+        </div>
+        <div class="buttons">
+          <label class="label">B<button class="button" id="b"></button></label><label class="label">A<button class="button" id="a"></button></label>
+        </div>
+      </section>
+    </figure>
+  </body>
+</html>
